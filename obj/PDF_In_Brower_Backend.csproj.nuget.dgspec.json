@@ -37,6 +37,44 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "PDFium.Windows": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "PDFiumSharp": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "PDFiumSharp.GdiPlus": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "PdfiumViewer.Native.x86.v8-xfa": {
+              "target": "Package",
+              "version": "[2018.4.8.256, )"
+            },
+            "Pdfium_x86Dll": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0-preview2.19523.17, )"
+            },
+            "System.Runtime.InteropServices.RuntimeInformation": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

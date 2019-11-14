@@ -2,9 +2,17 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <PlatformTarget>anycpu</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="PdfiumViewer" Version="2.13.0"/>
     <PackageReference Include="PdfiumViewer.Native.x86.v8-xfa" Version="2018.4.8.256"/>
+    <PackageReference Include="Pdfium_x86Dll" Version="1.1.0"/>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0-preview2.19523.17"/>
+    <PackageReference Include="PDFiumSharp" Version="1.0.0"/>
+    <PackageReference Include="PDFium.Windows" Version="1.0.0"/>
+    <PackageReference Include="NETStandard.Library" Version="2.0.3"/>
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0"/>
+    <PackageReference Include="System.ValueTuple" Version="4.5.0"/>
+    <PackageReference Include="PDFiumSharp.GdiPlus" Version="1.0.0"/>
   </ItemGroup>
 </Project>

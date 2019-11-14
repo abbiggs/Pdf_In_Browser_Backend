@@ -12,15 +12,16 @@ namespace PDF_In_Brower_Backend
         {
             PdfDocument document = new PdfDocument("pdf's/CS 369 REGISTRATION.pdf");
             PdfPageCollection pageCollection = document.Pages;
-            //PdfPage page = document;
-
-
-
-
+            PdfPage page = pageCollection[0];
+            PDFiumBitmap bitmap = new PDFiumBitmap(300, 300, true);
+            //From my understanding, this renders the PdfPage to the bitmap. The bitmap is simply the target.
+            page.Render(bitmap);
+            
+            
             Stream stream = new MemoryStream();
             document.Save(stream);
             
-            PDFiumBitmap bitmap = new PDFiumBitmap(300, 300, true);
+            
             
             
             
